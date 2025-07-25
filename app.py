@@ -37,7 +37,7 @@ def main():
     weekn = st.text_input('Enter the no of week nights if stay')
     wkndn = st.text_input('Enter the no of weekend nights if stay')
     totan = weekn+wkndn
-    park =(lambda x: 1 if x=='Online' else 0)st.selectbox('Does customer need parking',['yes','no']))
+    park = (lambda x: 1 if x == 'Yes' else 0)(st.selectbox('Does customer need parking?', ['Yes', 'No']))
     spcl = st.selectbox('How many special requests have been made',[0,1,2,3,4,5])
 
     lt_t,price_t = transformer.transform([[lt,price]])[0]
