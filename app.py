@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-with open('new_model.pkl','rb') as file:
+with open('final_model.pkl','rb') as file:
     model = pickle.load(file)
 
 with open('transformer.pkl','rb') as file:
