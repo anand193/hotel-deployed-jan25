@@ -14,9 +14,9 @@ def prediction(input_list):
     input_list = np.array(input_list,dtype = object)
     pred = model.predict_proba([input_list])[:,1][0]
     if pred>0.5:
-        return f'this booking is more likely to get canceled, chances{round(pred,2)}'
+        return f'This booking is more likely to get canceled, chances: {round(pred, 2)}'
     else:
-        return f'this booking is less likely to get cancelled, chances{round{pred,2)}'
+        return f'This booking is less likely to get canceled, chances: {round(pred, 2)}'
 
 def main():
     st.title('INN HOTEL GROUP')
@@ -31,7 +31,7 @@ def main():
                               3 if x=='Thus' else
                               4 if x=='Fri' else
                               5 if x=='Sat' else
-                              6 if x=='Sun')
+                              6)
     arr_w = weekd_lambda(st.selectbox('what is the weekday of arrival',['Mon','Tue','Wed','Thus','Fri','Sat','Sun']))
     dep_w = weekd_lambda(st.selectbox(('what is the weekday of departure',['Mon','Tue','Wed','Thus','Fri','Sat','Sun']))
     weekn = st.text_input('Ente the no of week nights if stay')
