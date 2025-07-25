@@ -5,7 +5,7 @@ import pandas as pd
 import pickle
 
 with open('model_stack.pkl','rb') as file:
-    mdoel = pickle.load(file)
+    model = pickle.load(file)
 
 with open('transformer.pkl','rb') as file:
     pt = pickle.load(file)
