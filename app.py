@@ -33,9 +33,9 @@ def main():
                               5 if x=='Sat' else
                               6)
     arr_w = weekd_lambda(st.selectbox('what is the weekday of arrival',['Mon','Tue','Wed','Thus','Fri','Sat','Sun']))
-    dep_w = weekd_lambda(st.selectbox(('what is the weekday of departure',['Mon','Tue','Wed','Thus','Fri','Sat','Sun']))
-    weekn = st.text_input('Ente the no of week nights if stay')
-    wkndn = st.text_input('Ente the no of weekend nights if stay')
+    ep_w = weekd_lambda(st.selectbox('What is the weekday of departure',['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']))
+    weekn = st.text_input('Enter the no of week nights if stay')
+    wkndn = st.text_input('Enter the no of weekend nights if stay')
     totan = weekn+wkndn
     park =(lambda x: 1 if x=='Online' else 0)st.selectbox('Does customer need parking',['yes','no']))
     spcl = st.selectbox('How many special requests have been made',[0,1,2,3,4,5])
