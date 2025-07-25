@@ -4,8 +4,9 @@ import pandas as pd
 import pickle
 
 # Load saved model and transformer
-with open('final_model.pkl', 'rb') as file:
-    model = pickle.load(file)
+from joblib import load
+model = load('final_model.joblib')
+pt = load('transformer.joblib')
 
 with open('transformer.pkl', 'rb') as file:
     pt = pickle.load(file)
