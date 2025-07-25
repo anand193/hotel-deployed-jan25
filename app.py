@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import pickle
 
-import joblib
-model = joblib.load('model.pkl')
+with open('final_model_xgb.pkl','rb') as file:
+    mdoel = pickle.load(file)
 
 with open('transformer.pkl','rb') as file:
     pt = pickle.load(file)
