@@ -24,7 +24,7 @@ def main():
     mkt = (lambda x: 1 if x=='Online' else 0)(st.selectbox('How the booking was made',['online','offline']))
     price = st.text_input('Enter the price of the room')
     adult = st.selectbox('How many adults',[1,2,3,4])
-    arr_m = st..slider('what is the month of arrival?',min_value = 1,max_value=12,step = 1)
+    arr_m = st.slider('what is the month of arrival?',min_value = 1,max_value=12,step = 1)
     weekd_lambda = (lambda x: 0 if x=='Mon' else
                               1 if x=='Tue' else
                               2 if x=='Wed' else
